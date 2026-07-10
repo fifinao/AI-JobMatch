@@ -156,9 +156,9 @@ For my personalised agent, the scoring node requires the LLM to:
 
 ## 📬 Contact
 
-- **Author:** Chunxu Han  
-- **Email:** s220311@dtu.dk  
-- **LinkedIn:** https://www.linkedin.com/in/chunxu-han  
+- **Author:** Fiona Tang  
+- **Email:** autrefiona@gmail.com  
+- **LinkedIn:** https://www.linkedin.com/in/xinyi-tang-fifi
 
 Feel free to reach out with questions or feature ideas!
 
