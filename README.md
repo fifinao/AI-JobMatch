@@ -1,6 +1,6 @@
 <img width="90" height="90" alt="ChatGPT 2025-11-24 17 16 20" src="https://github.com/user-attachments/assets/8c3a55fa-c731-4dd7-9fdd-edfce1430818" />
 
-# DailyJobMatch  
+# AIJobMatch  
 ![Made with n8n](https://img.shields.io/badge/Made%20with-n8n-00e8a2?style=flat&logo=n8n) 
 ![Powered by OpenAI](https://img.shields.io/badge/Powered%20by-OpenAI-412991?style=flat&logo=openai)
 ![Docker](https://img.shields.io/badge/Run%20with-Docker-2496ED?style=flat&logo=docker)
@@ -13,7 +13,7 @@
 ## 📑 Table of Contents
 1. [Overview](#-overview)  
 2. [Architecture Diagram](#-architecture-diagram)  
-3. [How to Use](#-how-to-use-dailyjobmatch)  
+3. [How to Use](#-how-to-use-aijobmatch)  
    - [Install n8n](#1️⃣-installing--running-n8n-with-docker)  
    - [Set Up Credentials](#2️⃣-setting-up-required-credentials)  
    - [Import Workflow](#3️⃣-importing--configuring-the-workflow)  
@@ -26,7 +26,7 @@
 
 ## 📚 Overview
 
-### 🧠 What DailyJobMatch Does  
+### 🧠 What AIJobMatch Does  
 DailyJobMatch automates your job search every morning by collecting fresh job postings, comparing each role against your CV using a large language model, and emailing you a ranked shortlist of the most relevant opportunities.
 
 ### ⭐ Core Features
@@ -50,14 +50,14 @@ DailyJobMatch automates your job search every morning by collecting fresh job po
 
 ---
 
-## 📘 How to Use DailyJobMatch
+## 📘 How to Use AIJobMatch
 
 > This is an early-stage project and still requires personalised setup.
 
 ---
 
 ### 1️⃣ Installing & Running n8n with Docker  
-DailyJobMatch is built on **n8n**, a flexible automation tool. Docker is the recommended and easiest deployment method.
+AIJobMatch is built on **n8n**, a flexible automation tool. Docker is the recommended and easiest deployment method.
 Here is an installation guide: https://github.com/n8n-io/n8n
 
 ---
@@ -74,7 +74,7 @@ https://docs.n8n.io/integrations/builtin/credentials/google/
 In our workflow, [Apify](https://console.apify.com) is used to collect fresh LinkedIn jobs within the last 24 hours. Apify provides tons of actors to scrape up-to-date web data from any website for AI apps and agents, and I chose [**_Linkedin Jobs Scraper - PPR_**](https://apify.com/curious_coder/linkedin-jobs-scraper) as it is paid by result rather than subscription. But feel free to choose the scrapper which fits your needs, and the detailed configuration steps will be on the actor's page. 
 
 #### 🔹 OpenAI (LLM scoring model)  
-DailyJobMatch uses an LLM to read your job description, read your CV, evaluate the matches and score the fit across 6 dimensions and finally generate structured JSON outputs. n8n can be integrated with almost all the conversational chatbots. Here's how you can set up with the **OpenAI model**:
+AIJobMatch uses an LLM to read your job description, read your CV, evaluate the matches and score the fit across 6 dimensions and finally generate structured JSON outputs. n8n can be integrated with almost all the conversational chatbots. Here's how you can set up with the **OpenAI model**:
 https://docs.n8n.io/integrations/builtin/credentials/openai/
 
 ---
@@ -83,7 +83,7 @@ https://docs.n8n.io/integrations/builtin/credentials/openai/
 After setting up Docker and credentials, import:
 
 ```
-workflow/Daily_Job_Match.json
+workflow/AI_Job_Match_updated.json
 ```
 
 > ⚠️ **Replace all my example credentials with your own.** 
